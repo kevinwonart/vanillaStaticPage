@@ -9,6 +9,9 @@ body {
 }
 
 .topnav {
+  position:fixed;
+  top: 0;
+  width: 100%;
   overflow: hidden;
   background-color: #333;
 }
@@ -44,12 +47,14 @@ body {
 }
 
 .about-section {
-  height: 100vh;
+  height: 700px;
   background-color: #f3f4f6;
-  align-items:center;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.content {
+.about-section-content {
   display:flex;
   flex-direction: row;
 }
@@ -58,13 +63,45 @@ body {
   margin-right: 20px;
 }
 
-@media (mad-width: 768px) {
-  .content {
+.about-description {
+  max-width: 380px;
+  word-wrap: break-word;
+  overflow: hidden;
+  align-items: center;
+}
+
+.works-section {
+  height:700px;
+  background-color: #d4d4d8;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-section {
+  height:700px;
+  background-color: #e4e4e7;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .about-section-content {
+    display:flex;
     flex-direction: column;
   }
-  .logo {
-    margin-right: 0;
+  .about-page-logo {
+    align-items: center;
   }
+  .about-description {
+    justify-content: center;
+    margin: 20px;
+  }
+}
+
+html{
+  scroll-behavior: smooth;
 }
 
 </style>
@@ -81,8 +118,8 @@ body {
   <a href="#works" class="split">Works</a>
 </div>
 
-<section class="about-section">
-  <div class="content">
+<section class="about-section" id=about>
+  <div class="about-section-content">
     <div class="about-page-logo">
       <img src="./src/images/whwlogo400.png" alt="Logo">
     </div>
@@ -91,5 +128,12 @@ body {
     </div>
   </div>
 </section>
+<section class="works-section" id=works>
+  <p>Works section goes here</p>
+</section>
+<section class="contact-section" id=contact>
+  <p>contact form goes here</p>
+</section>
+
 </body>
 </html>

@@ -4,3 +4,5 @@
   <a href="#works" class="split">Works</a>
   <a href="#about" class ="split">About</a>
 
+p
+  background-color: #cbd5e1;
