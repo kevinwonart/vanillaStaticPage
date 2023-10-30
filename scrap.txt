@@ -1,0 +1,6 @@
+  <a href="./main.html" class=logo>
+    <img src="./src/images/whwlogo49.png" alt="logo" id=>
+  </a>
+  <a href="#works" class="split">Works</a>
+  <a href="#about" class ="split">About</a>
+
